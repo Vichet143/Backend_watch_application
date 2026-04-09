@@ -19,6 +19,10 @@ target/
 *.iml
 *.ipr
 
+### Application Properties (contains sensitive data) ###
+src/main/resources/application.properties
+src/main/resources/application-*.properties
+
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
