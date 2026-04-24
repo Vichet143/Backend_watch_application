@@ -23,6 +23,9 @@ target/
 src/main/resources/application.properties
 src/main/resources/application-*.properties
 
+.env
+
+./src/main/resources/static
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
