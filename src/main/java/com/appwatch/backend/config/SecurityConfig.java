@@ -15,7 +15,9 @@ public class SecurityConfig {
         http
                 .csrf(csrf -> csrf.disable()) // Disable CSRF for APIs
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**", "/h2-console/**", "/products/**", "/wishlist/**", "/cart/**").permitAll() // Allow
+                        .requestMatchers("/auth/**", "/h2-console/**", "/products/**", "/wishlist/**", "/cart/**",
+                                "/payments/**")
+                        .permitAll() // Allow
                         .anyRequest().authenticated())
                 .formLogin(form -> form.disable())
                 .httpBasic(basic -> basic.disable());
