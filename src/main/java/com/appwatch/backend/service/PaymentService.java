@@ -299,10 +299,4 @@ public class PaymentService {
     Files.write(path, data);
   }
 
-  private String safeFileName(String value) {
-    if (!hasText(value)) {
-      return "unknown";
-    }
-    return value.replaceAll("[^a-zA-Z0-9-_]", "_");
-  }
 }
